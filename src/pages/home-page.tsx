@@ -8,9 +8,9 @@ import {
   Linkedin,
   Mail,
   ExternalLink,
-  Download,
-  Home,
+  Download
 } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 interface Project {
   id: number;
@@ -143,6 +143,12 @@ const HomePage: React.FC = () => {
         "Thank you! Your message has been received. I'll get back to you soon ✨",
       );
       setFormData({ name: "", email: "", message: "" });
+      emailjs.send(
+        import.meta.env.VITE_service_id,
+        import.meta.env.VITE_template_id,
+        formData,
+        import.meta.env.VITE_user_id,
+      );
       setIsSubmitting(false);
     }, 1200);
   };
