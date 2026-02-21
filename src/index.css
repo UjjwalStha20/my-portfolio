@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --color-duskBlue: #3D5A80;
+  --color-lightCyan: #E0FBFC;
+  --color-burntPeach: #EE6C4D;
+  --color-jetBlack: #293241;
+}
+
+@layer components {
+  .project-card {
+    @apply grid md:grid-cols-2 gap-10 items-center 
+          bg-duskBlue/10 backdrop-blur-lg 
+          border border-duskBlue/30 
+          rounded-3xl p-8 shadow-xl 
+          hover:scale-[1.02] transition-all duration-300;
+  }
+
+  .tech-badge {
+    @apply bg-duskBlue/20 text-lightCyan 
+          px-3 py-1 rounded-full text-sm 
+          border border-duskBlue/40;
+  }
+
+  .primary-btn {
+    @apply bg-burntPeach hover:bg-burntPeach/90 
+          px-5 py-2 rounded-xl font-semibold 
+          transition duration-300 text-white 
+          shadow-md hover:shadow-burntPeach/40;
+  }
+
+  .outline-btn {
+    @apply border border-burntPeach text-burntPeach 
+          hover:bg-burntPeach hover:text-white 
+          px-5 py-2 rounded-xl font-semibold 
+          transition duration-300;
+  }
+  .glass-btn {
+    @apply px-6 py-3 bg-duskBlue/20 
+           backdrop-blur-md border border-duskBlue/40 
+           rounded-xl font-semibold 
+           hover:bg-duskBlue/30 
+           transition duration-300 text-lightCyan;
+  }
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl bg-duskBlue/20 
+           border border-duskBlue/40 
+           focus:outline-none focus:border-burntPeach 
+           transition duration-300 text-lightCyan;
+  }
+
+  .contact-button {
+    @apply w-full bg-burntPeach hover:bg-burntPeach/90 
+           py-3 rounded-xl font-semibold 
+           transition duration-300 shadow-lg 
+           hover:shadow-burntPeach/40 text-white;
+  }
+  .skill-pill {
+    @apply px-5 py-2 rounded-full text-sm md:text-base 
+           bg-duskBlue/20 border border-duskBlue/40 
+           text-lightCyan font-semibold 
+           hover:bg-burntPeach hover:text-white 
+           transition duration-300;
+  }
+
+  .stat-card {
+    @apply bg-duskBlue/10 p-6 rounded-2xl 
+           border border-duskBlue/30 
+           text-center shadow-lg;
+  }
+
+  .expertise-item {
+    @apply flex items-center gap-6 
+           text-2xl md:text-3xl font-semibold 
+           text-duskBlue;
+  }
+  .footer-link {
+    @apply text-lightCyan hover:text-burntPeach transition-colors duration-300;
+  }
+}
