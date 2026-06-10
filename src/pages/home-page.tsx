@@ -314,7 +314,7 @@ const HomePage: React.FC = () => {
             <div className="md:col-span-7 space-y-10 text-lg leading-relaxed text-[#a0a0c0]">
               <p>
                 Hey! I'm a passionate fresher with solid foundations in
-                full-stack web development. Recently graduated from Tribhuvan
+                full-stack web development. Currently studying at Tribhuvan
                 University — focused on clean, performant and user-centered
                 applications.
               </p>
@@ -347,8 +347,7 @@ const HomePage: React.FC = () => {
                     CURRENT FOCUS
                   </div>
                   <p className="leading-relaxed">
-                    TypeScript patterns, motion design (Framer Motion),
-                    accessible & performant web experiences.
+                    Machine learning and AI.
                   </p>
                 </div>
               </div>
@@ -702,9 +701,7 @@ const HomePage: React.FC = () => {
             © {new Date().getFullYear()} Ujjwal Shrestha. Crafted with ❤️ and
             lots of ☕ in Kathmandu, Nepal.
           </p>
-          <p className="mt-3 text-xs opacity-50">
-            Made with React + Tailwind + Dark Magic
-          </p>
+          
         </div>
       </footer>
     </div>
